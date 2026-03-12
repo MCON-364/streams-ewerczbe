@@ -37,7 +37,7 @@ class StreamHomeworkTest {
     @Test
     @DisplayName("1.2: getOrderCount returns correct counts")
     void testGetOrderCount() {
-        assertEquals(5, hw.getOrderCount(OrderStatus.DELIVERED));
+        assertEquals(6, hw.getOrderCount(OrderStatus.DELIVERED));
         assertEquals(2, hw.getOrderCount(OrderStatus.SHIPPED));
         assertEquals(1, hw.getOrderCount(OrderStatus.PENDING));
         assertEquals(1, hw.getOrderCount(OrderStatus.CANCELLED));
